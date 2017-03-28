@@ -8,9 +8,18 @@ const getDayById = (allDays, dayId) => {
 	});
 };
 
+const getVacationsForDayId = (allVacations, dayId) => {
+	return allVacations.filter((vacation) => {
+		return dayId >= vacation.startDate && dayId <=vacation.endDate;
+	}).map((vacation) => {
+		return "hotpink";
+	});
+};
+
 const mapStateToProps = (state, props) => {
 	return {
-		day: getDayById(state.days, props.id)
+		day: getDayById(state.days, props.id),
+		vacations: getVacationsForDayId(state.vacations, props.id)
 	}
 };
 

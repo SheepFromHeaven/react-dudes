@@ -1,25 +1,25 @@
 import { expect } from 'chai'
-import days from './vacations';
+import vacations from './vacations';
 
 const actionMock = {
 	type: 'ADD_VACATION',
-	id: 234,
-	startDate: '',
-	endDate: '',
-	personId: 123
+	id: 0,
+	startDate: 0,
+	endDate: 1,
+	personId: 0
 };
 
 describe('vacations', () => {
 	it('should be added with ADD_VACATION action', () => {
-		expect(days([], actionMock)).to.deep.equal([{
-			id: 234,
-			startDate: '',
-			endDate: '',
-			personId: 123
+		expect(vacations([], actionMock)).to.deep.equal([{
+			id: 0,
+			startDate: 0,
+			endDate: 1,
+			personId: 0
 		}]);
 	});
 
 	it('should return default state if action is undefined', () => {
-		expect(days([], {type: undefined})).to.deep.equal([]);
+		expect(vacations([], {type: undefined})).to.deep.equal([]);
 	});
 });
