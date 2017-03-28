@@ -8,7 +8,6 @@ import {createStore} from 'redux'
 import calendarApp from './reducers/index';
 import mockState from './mockState';
 
-
 let store = createStore(calendarApp, mockState);
 
 ReactDOM.render(
