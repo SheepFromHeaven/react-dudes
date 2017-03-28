@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import days from './days'
+import days from './vacations'
 
 const calendarApp = combineReducers({
 	days
