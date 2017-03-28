@@ -4,33 +4,10 @@ import App from './App';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import { combineReducers } from 'redux';
+import mockState from '../mockState';
+import calendarApp from '../reducers/index';
 
-let initState = {
-	days: [
-		{
-			id: 0,
-			dayInWeek: 0,
-			dayInMonth: 1,
-			holidayName: "Nikolaus",
-			monthId: 0
-		}
-	],
-	months: [
-		{
-			id: 0,
-			name: "January",
-			yearId: 0
-		}
-	],
-	years: [
-		{
-			id: 0,
-			name: "2017"
-		}
-	]
-};
-
-let store = createStore(combineReducers({}), initState);
+let store = createStore(calendarApp, mockState);
 
 describe('App', () => {
 	it('renders without crashing', () => {

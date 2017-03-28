@@ -35,7 +35,7 @@ describe('Day', () => {
         );
 
         // check if all elements are present one time
-        expect(dayDOM.text()).to.be.equal('1Mo1');
+        expect(dayDOM.text()).to.be.equal('1MoKW1');
     });
 
     test('doesnt contain classes for vacations if vacations are empty', () => {
