@@ -5,10 +5,20 @@ import './index.css';
 
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
+import calendarApp from './reducers/index';
 
-//let store = createStore();
+let initState = {
+	days: [{
+		id: 0,
+		weekday: "HA"
+	}]
+};
+
+let store = createStore(calendarApp, initState);
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+	<Provider store={store}>
+		<App />
+	</Provider>,
+	document.getElementById('root')
 );
