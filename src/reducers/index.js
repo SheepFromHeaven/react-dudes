@@ -16,7 +16,8 @@ let years = (state = [], action) => {
 const calendarApp = combineReducers({
 	days,
 	months,
-	years
+	years,
+	vacations
 });
 
 export default calendarApp

@@ -1,6 +1,10 @@
-let nextDayId = 0;
-export const addVacation = (text) => ({
-	type: 'ADD_TODO',
-	id: nextTodoId++,
-	text
-})
+let nextVacationId = 0;
+export const addVacation = (startDate, endDate, userId) => (
+	return {
+		type: 'ADD_VACATION',
+		id: nextVacationId++,
+		startDate: startDate,
+		endDate: endDate,
+		user: userId
+	}
+)
