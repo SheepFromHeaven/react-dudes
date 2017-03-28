@@ -1,5 +1,8 @@
 .month {
-    padding: 0 10px;
     float: left;
     border-left: 1px solid #ccc;
+}
+
+.month__head {
+    text-align: center;
 }
