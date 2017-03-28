@@ -21,14 +21,22 @@ class Day extends Component {
         let vacations = [];
 
         this.props.vacations.forEach((color)=> {
-            vacations.push(<span className="day__vacation" style="background-color:red"></span>);
+            const style = {
+                backgroundColor: color
+            };
+            vacations.push(<span className="day__vacation" style={style}></span>);
         });
 
+        let isHoliday = this.props.day.holidayName ? ' day--holiday' : '';
+
         return (
-            <div className={'day day--' + this.props.day.dayInWeek}>
+            <div className={'day day--' + this.props.day.dayInWeek + isHoliday}>
                 <span className="day__dayInMonth">{this.props.day.dayInMonth}</span>
                 <span className="day__weekday">{this.getWeekday(this.props.day.dayInWeek)}</span>
-                {vacations}
+                {this.props.day.holidayName && <span className="day__holiday">{this.props.day.holidayName}</span>}
+                <div className="day__vacations">
+                    {vacations}
+                </div>
                 {this.props.day.dayInWeek === 0 && <span className="day__calendarWeek">KW{this.props.day.calendarWeek}</span>}
             </div>
         );
