@@ -11,7 +11,7 @@ const getVacationsForDayId = (allVacations, dayId) => {
 	return allVacations.filter((vacation) => {
 		return dayId >= vacation.startDate && dayId <=vacation.endDate;
 	}).map((vacation) => {
-		return "hotpink";
+		return ["hotpink"];
 	});
 };
 

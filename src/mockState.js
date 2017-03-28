@@ -4,7 +4,7 @@ export default {
 			id: 0,
 			dayInWeek: 0,
 			dayInMonth: 1,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -12,7 +12,7 @@ export default {
 			id: 1,
 			dayInWeek: 1,
 			dayInMonth: 2,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -20,7 +20,7 @@ export default {
 			id: 2,
 			dayInWeek: 2,
 			dayInMonth: 3,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -28,7 +28,7 @@ export default {
 			id: 3,
 			dayInWeek: 3,
 			dayInMonth: 4,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -36,7 +36,7 @@ export default {
 			id: 4,
 			dayInWeek: 4,
 			dayInMonth: 5,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -44,7 +44,7 @@ export default {
 			id: 5,
 			dayInWeek: 5,
 			dayInMonth: 6,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -52,7 +52,7 @@ export default {
 			id: 6,
 			dayInWeek: 6,
 			dayInMonth: 7,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 1
 		},
@@ -60,7 +60,7 @@ export default {
 			id: 7,
 			dayInWeek: 0,
 			dayInMonth: 8,
-			holidayName: "Nikolaus",
+			holidayName: "Heiliger Marc",
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -68,7 +68,7 @@ export default {
 			id: 8,
 			dayInWeek: 1,
 			dayInMonth: 9,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -76,7 +76,7 @@ export default {
 			id: 9,
 			dayInWeek: 2,
 			dayInMonth: 10,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -84,7 +84,7 @@ export default {
 			id: 10,
 			dayInWeek: 3,
 			dayInMonth: 11,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -92,7 +92,7 @@ export default {
 			id: 11,
 			dayInWeek: 4,
 			dayInMonth: 12,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -100,7 +100,7 @@ export default {
 			id: 12,
 			dayInWeek: 5,
 			dayInMonth: 13,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -108,7 +108,7 @@ export default {
 			id: 13,
 			dayInWeek: 6,
 			dayInMonth: 14,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 2
 		},
@@ -116,7 +116,7 @@ export default {
 			id: 14,
 			dayInWeek: 0,
 			dayInMonth: 15,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 3
 		},
@@ -124,7 +124,7 @@ export default {
 			id: 15,
 			dayInWeek: 1,
 			dayInMonth: 16,
-			holidayName: "Nikolaus",
+			holidayName: null,
 			monthId: 0,
 			calendarWeek: 3
 		}
