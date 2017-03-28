@@ -1,13 +1,30 @@
 .day {
-  width: 100px;
-  padding: 15px;
-  box-sizing: border-box;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 13px;
 }
 
 .day--Sa {
-  background-color: #FFFFCC;
+    background-color: #FFFFCC;
 }
 
 .day--So {
-  background-color: #FFCC99;
+    background-color: #FFCC99;
+}
+
+.day--Sa,
+.day--So {
+    font-weight: 600;
+}
+
+.day__dayInMonth {
+   margin-right: 7px;
+}
+
+.day__weekday {
+}
+
+.day__calendarWeek {
+    float: right;
 }
