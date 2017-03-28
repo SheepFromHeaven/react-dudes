@@ -9,7 +9,7 @@ const getMonthById = (allMonths, monthId) => {
 
 const getDaysByMonthId = (allDays, monthId) => {
 	return allDays.filter((day) => {
-		return day.monthId === monthId;
+		return true || day.monthId === monthId;
 	});
 };
 

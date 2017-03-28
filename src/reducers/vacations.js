@@ -1,28 +1,27 @@
-const day = (state = {}, action) => {
+const vacation = (state = {}, action) => {
 	switch (action.type) {
-		case 'ADD_DAY':
-			return {
+		case 'ADD_VACATION':
+			return  {
 				id: action.id,
-				dayOfMonth: action.dayOfMonth,
-				weekday: action.weekday,
-				calendarWeek: action.calendarWeek,
-				holidayName: action.holidayName
+				startDate: action.startDate,
+				endDate: action.endDate,
+				personId: action.personId
 			};
 		default:
 			return state
 	}
-}
+};
 
-const days = (state = [], action) => {
+const vacations = (state = [], action) => {
 	switch (action.type) {
-		case 'ADD_DAY':
+		case 'ADD_VACATION':
 			return [
 				...state,
-				day(undefined, action)
+				vacation(undefined, action)
 			];
 		default:
 			return state
 	}
 }
 
-export default days
+export default vacations
