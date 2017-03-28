@@ -18,11 +18,17 @@ class Day extends Component {
     }
 
     render() {
+        let vacations = [];
+
+        this.props.vacations.forEach((color)=> {
+            vacations.push(<span className="day__vacation" style="background-color:red"></span>);
+        });
 
         return (
             <div className={'day day--' + this.props.day.dayInWeek}>
                 <span className="day__dayInMonth">{this.props.day.dayInMonth}</span>
                 <span className="day__weekday">{this.getWeekday(this.props.day.dayInWeek)}</span>
+                {vacations}
                 {this.props.day.dayInWeek === 0 && <span className="day__calendarWeek">KW{this.props.day.calendarWeek}</span>}
             </div>
         );
