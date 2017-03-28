@@ -6,7 +6,7 @@ class Year extends Component {
     render() {
         let months = [];
         this.props.months.forEach((month)=> {
-            months.push(<FilledMonth id={month.id}/>);
+            months.push(<FilledMonth key={month.id} id={month.id}/>);
         });
 
         return (
