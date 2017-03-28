@@ -9,6 +9,6 @@ import Year from './Year';
 describe('Year', () => {
 	it('renders without crashing', () => {
 		const div = document.createElement('div');
-		ReactDOM.render(<Year />, div);
+		ReactDOM.render(<Year months={[]}/>, div);
 	});
 });
