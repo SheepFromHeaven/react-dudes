@@ -4,13 +4,14 @@ import './Month.css';
 
 class Month extends Component {
     render() {
-        let days = [
-            <FilledDay id={0}/>
-        ];
+        let days = [];
+        this.props.days.forEach((day)=> {
+            days.push(<FilledDay id={day.id}/>);
+        });
 
         return (
             <div className="month">
-                <h2 className="month__head">{this.props.name}</h2>
+                <h2 className="month__head">{this.props.month.name}</h2>
                 {days}
             </div>
         );

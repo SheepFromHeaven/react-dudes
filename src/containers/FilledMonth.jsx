@@ -8,14 +8,14 @@ const getMonthById = (allMonths, monthId) => {
 };
 
 const getDaysByMonthId = (allDays, monthId) => {
-	return allDays.find((day) => {
-		return day.monthId == monthId;
+	return allDays.filter((day) => {
+		return day.monthId === monthId;
 	});
 };
 
 const mapStateToProps = (state, props) => {
 	return {
-		month: getDayById(state.months, props.id),
+		month: getMonthById(state.months, props.id),
 		days: getDaysByMonthId(state.days, props.id)
 	}
 };
@@ -29,4 +29,4 @@ const FilledMonth = connect(
 	mapDispatchToProps
 )(Month);
 
-export default FilledDay;
+export default FilledMonth;

@@ -8,15 +8,15 @@ const getYearById = (allYears, yearId) => {
 };
 
 const getMonthsByYearId = (allMonths, yearId) => {
-	return allMonths.find((month) => {
-		return month.yearId == yearId;
+	return allMonths.filter((month) => {
+		return month.yearId === yearId;
 	});
 };
 
 const mapStateToProps = (state, props) => {
 	return {
-		month: getYearById(state.years, props.id),
-		days: getMonthsByYearId(state.days, props.id)
+		year: getYearById(state.years, props.id),
+		months: getMonthsByYearId(state.months, props.id)
 	}
 };
 
