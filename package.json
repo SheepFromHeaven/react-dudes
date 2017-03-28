@@ -31,6 +31,8 @@
   },
 
   "jest": {
+      "collectCoverage": true,
+      "coverageDirectory": "./coverage",
       "moduleNameMapper": {
         "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
       }
