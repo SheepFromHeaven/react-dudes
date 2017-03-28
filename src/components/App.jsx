@@ -1,29 +1,21 @@
 import React, { Component } from 'react';
-import Day from './Day/Day';
+import Year from './Year/Year';
 import './App.css';
 
 class App extends Component {
-  render() {
-      let days = [
-          <Day key="1" dayInMonth="1" weekday="Mo" calendarWeek="KW1" />,
-          <Day key="2" dayInMonth="2" weekday="Di" calendarWeek="KW1" />,
-          <Day key="3" dayInMonth="3" weekday="Mi" calendarWeek="KW1" />,
-          <Day key="4" dayInMonth="4" weekday="Do" calendarWeek="KW1" />,
-          <Day key="5" dayInMonth="5" weekday="Fr" calendarWeek="KW1" />,
-          <Day key="6" dayInMonth="6" weekday="Sa" calendarWeek="KW1" />,
-          <Day key="7" dayInMonth="7" weekday="So" calendarWeek="KW1" />
-      ];
+    render() {
+        let years = [
+            <Year key="2017" name="2017" />,
+            <Year key="2018" name="2018" />,
+            <Year key="2019" name="2019" />
+        ];
 
-    return (
-        <div className="calendar">
-            <div className="calendar__year">
-                <div className="calendar__month">
-                    {days}
-                </div>
+        return (
+            <div className="calendar">
+                {years}
             </div>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 export default App;

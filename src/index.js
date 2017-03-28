@@ -6,11 +6,9 @@ import './index.css';
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 
-let store = createStore();
+//let store = createStore();
 
 ReactDOM.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-	document.getElementById('root')
+  <App />,
+  document.getElementById('root')
 );
