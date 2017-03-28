@@ -1,6 +1,7 @@
 .day {
     width: 200px;
     padding: 10px;
+    position: relative;
     box-sizing: border-box;
     font-size: 13px;
 }
@@ -23,5 +24,30 @@
 }
 
 .day__calendarWeek {
-    float: right;
+    position: absolute;
+    right: 15px;
+}
+
+.day__vacations {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 50px;
+    height: 36px;
+}
+
+.day__vacation {
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    margin: 0 3px;
+}
+
+.day__holiday {
+    margin-left: 10px;
+    color: #DD4A4A;
+}
+
+.day--holiday {
+    background-color: #FFD9D9;
 }
