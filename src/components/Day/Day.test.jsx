@@ -19,10 +19,10 @@ describe('Day', () => {
         );
 
         // check if all elements are present one time
-        expect(day.find('.day')).toBe(1);
-        expect(day.find('.day__dayInMonth')).toBe(1);
-        expect(day.find('.day__weekday')).toBe(1);
-        expect(day.find('.day__calendarWeek')).toBe(1);
+        expect(day.hasClass('day')).toBeTruthy();
+        expect(day.find('.day__dayInMonth')).toBeTruthy();
+        expect(day.find('.day__weekday')).toBeTruthy();
+        expect(day.find('.day__calendarWeek')).toBeTruthy();
     });
 
     test('contains the correct texts', () => {
