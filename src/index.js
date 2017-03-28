@@ -11,23 +11,26 @@ let initState = {
 	days: [
 		{
 			id: 0,
-			weekday: "Monday",
+			dayInWeek: 0,
 			dayInMonth: 1,
 			holidayName: "Nikolaus",
+			calendarWeek: 1,
 			monthId: 0
 		},
 		{
 			id: 1,
-			weekday: "Tuesday",
+			dayInWeek: 5,
 			dayInMonth: 2,
 			holidayName: "Nikolaus",
+			calendarWeek: 1,
 			monthId: 0
 		},
 		{
 			id: 3,
-			weekday: "Monday",
+			dayInWeek: 0,
 			dayInMonth: 1,
 			holidayName: "Nikolaus",
+			calendarWeek: 2,
 			monthId: 1
 		}
 	],
