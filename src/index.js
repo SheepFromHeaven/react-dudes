@@ -8,10 +8,47 @@ import {createStore} from 'redux'
 import calendarApp from './reducers/index';
 
 let initState = {
-	days: [{
-		id: 0,
-		weekday: "HA"
-	}]
+	days: [
+		{
+			id: 0,
+			weekday: "Monday",
+			dayInMonth: 1,
+			holidayName: "Nikolaus",
+			monthId: 0
+		},
+		{
+			id: 1,
+			weekday: "Tuesday",
+			dayInMonth: 2,
+			holidayName: "Nikolaus",
+			monthId: 0
+		},
+		{
+			id: 3,
+			weekday: "Monday",
+			dayInMonth: 1,
+			holidayName: "Nikolaus",
+			monthId: 1
+		}
+	],
+	months: [
+		{
+			id: 0,
+			name: "January",
+			yearId: 0
+		},
+		{
+			id: 1,
+			name: "January",
+			yearId: 0
+		}
+	],
+	years: [
+		{
+			id: 0,
+			name: "2017"
+		}
+	]
 };
 
 let store = createStore(calendarApp, initState);
