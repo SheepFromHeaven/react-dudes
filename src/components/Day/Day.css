@@ -1,0 +1,13 @@
+.day {
+  width: 100px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.day--sa {
+  background-color: #FFFFCC;
+}
+
+.day--so {
+  background-color: #FFCC99;
+}
